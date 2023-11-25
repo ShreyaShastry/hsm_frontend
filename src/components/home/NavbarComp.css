@@ -1,0 +1,62 @@
+/* NavbarComp.css */
+
+/* Navbar styling */
+.bg-body-tertiary {
+  background-color: #3498db;
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  color:#188566;
+  font-size: 34px;
+}
+
+/* Navbar links styling */
+.nav-link,
+.navbar-toggler-icon {
+  font-size: large;
+  font-weight: 500;
+margin-right: 18px;
+  color: #351a73;
+}
+
+/* Navbar links hover effect */
+.nav-link:hover {
+  color: #ecf0f1;
+}
+
+/* Navbar active link styling */
+.navbar-nav .nav-link.active {
+  background-color: #2980b9;
+  border-radius: 5px;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+/* Navbar dropdown styling */
+.navbar-nav .nav-item.dropdown:hover .nav-link {
+  color: #41aec9;
+}
+
+/* Navbar dropdown item styling */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Navbar dropdown menu styling */
+.dropdown-menu {
+  background-color: #3498db;
+}
+
+/* Navbar toggle button styling */
+.navbar-toggler {
+  border-color: #ffffff;
+}
+
+/* Make the Navbar full-width */
+.navbar {
+  width: 100%;
+}

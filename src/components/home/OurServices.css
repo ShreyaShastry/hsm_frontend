@@ -1,0 +1,92 @@
+.our-services {
+  font-size: 24px;
+  padding: 20px;
+  background: linear-gradient(to right, #eae9eb, #a4d2e6);
+  text-align: center;
+  height: 150vh;
+}
+.service-cards {
+  height: 400px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 20px;
+  padding: 20px;
+}
+.service-card h3 {
+  text-align: center;}
+.service-card {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 50px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, #c9b8a3, #e7e7e2, #bee2be, #abe7e7, #ecd8fa, #c3b3df);
+  background-size: 400% 400%;
+  animation: gradient-animation 10s ease infinite;
+  transition: transform 0.3s ease;
+
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+.service-card p {
+  text-align: center; 
+}
+
+.card-content img {
+  width: 50%;
+  max-height: 100px;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.service-card h3 {
+  margin: 10px 0;
+}
+
+.know-more-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.know-more-button:hover {
+  background-color: #45a049;
+}

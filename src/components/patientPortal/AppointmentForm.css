@@ -1,0 +1,127 @@
+.outerHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.formContainer {
+  text-align: center;
+}
+.backgroundAnimation {
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: -100%;
+  left: -100%;
+  animation: moveBackground 30s linear infinite, changeColors 20s linear infinite alternate; /* Multiple animations */
+  background-image: linear-gradient(45deg, #ffdbac, #add8e6); /* Skin to blue gradient colors */
+  background-size: 600% 600%;
+  z-index: -1;
+}
+
+@keyframes moveBackground {
+  0% {
+    transform: translate(-20%, -20%);
+  }
+  100% {
+    transform: translate(20%, 20%);
+  }
+}
+
+@keyframes changeColors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(180deg);
+  }
+}
+
+
+.holder {
+  margin-left: 100px;
+  width: 400px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: left; /* Adjust alignment for form elements */
+  margin-top: 20px; /* Add margin to separate the heading and form */
+}
+.orSignup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #00ffee;
+  font-size: 16px;
+  color: rgb(171, 171, 215);
+  padding: 8px 16px; /* Padding to create button-like structure */
+  border-radius: 5px; /* Rounded corners */
+  display: inline-block;
+  position: relative;
+  display: inline-block;
+  position: relative;
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+/* Other styles remain the same */
+
+
+.formLabel {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.formControl {
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.btn {
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: blue;
+  display: inline-block;
+  position: relative;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: blue;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.link:hover::before {
+  transform: scaleX(1);
+}

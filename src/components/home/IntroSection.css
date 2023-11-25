@@ -1,0 +1,106 @@
+
+.intro-section{
+    background-color: aquamarine;
+    position: relative;
+}
+.intro-content {
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: 30%; 
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .intro-content h2{
+    margin-bottom: 100px;
+    
+  }
+.register-section {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a3f4c5; 
+    color: #fff;
+    border-radius: 2px;
+    animation: bounceAnimation 2s infinite;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+    
+  }
+  @keyframes bounceAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  .register-section h2 {
+    color: rgb(62, 37, 5);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .register-section p{
+    color: rgb(5, 69, 18);
+    font-size: 2rem;
+  }
+  .intro-content{
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    .intro-content {
+      top: 20%; 
+    }
+    .register-section p{
+        color: rgb(5, 69, 18);
+        font-size: 18px;
+      }
+  }
+  .register-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: rgb(188, 35, 35);
+    color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+ 
+  
+  .animated-polygons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .polygon {
+    position: absolute;
+    background-color: #fff; 
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+    animation: polygon-animation 6s infinite alternate;
+  }
+  
+  @keyframes polygon-animation {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    100% {
+      transform: translateY(-200vh) rotate(360deg);
+    }
+  }
+  
